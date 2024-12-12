@@ -1,0 +1,83 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, rgb(102, 0, 128), #f8f9fa);
+  color: #333;
+  margin-top: -4%;
+}
+
+/* Main App Container */
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+  max-width: 800px;
+  margin: 30px auto;
+}
+
+/* Application Title */
+h1 {
+  font-size: 2.5rem;
+  color: #dec9e3; /* Updated to a richer blue */
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Icon for Title */
+.app-icon {
+  font-size: 2.5rem;
+  color: #edc1e4; /* Matches the h1 color */
+  animation: rotateIcon 1.5s linear infinite;
+}
+
+/* Reset Button */
+.reset-button {
+  margin: 20px;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect for Reset Button */
+.reset-button:hover {
+  background: linear-gradient(135deg, #0056b3, #003d80);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .App {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .reset-button {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+}
+
+@keyframes rotateIcon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

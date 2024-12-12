@@ -1,0 +1,59 @@
+.ticket-display-container {
+  background: linear-gradient(135deg, #f1a2ee, #f9f9f9);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  margin: 25px auto;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for the Container */
+.ticket-display-container:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(135deg, #fb7aec, #e3e8ef);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2), 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading Style */
+.ticket-display-container h3 {
+  font-size: 1.8rem;
+  color: #650588;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(190, 38, 187, 0.1);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Paragraph Style */
+.ticket-display-container p {
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 10px 0;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect for Text */
+.ticket-display-container:hover p {
+  color: #610761;
+  transform: translateY(-3px);
+}
+
+/* Glow Effect for Heading */
+.ticket-display-container h3:hover {
+  text-shadow: 0 0 8px rgba(176, 40, 165, 0.6), 0 0 16px rgba(0, 123, 255, 0.4);
+}
+
+/* Animation for Fade-In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

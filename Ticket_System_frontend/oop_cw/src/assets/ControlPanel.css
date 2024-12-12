@@ -1,0 +1,68 @@
+.control-panel-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.start-button,
+.stop-button {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.start-button {
+  background: linear-gradient(135deg, #28a745, #218838);
+}
+
+.start-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.stop-button {
+  background: linear-gradient(135deg, #dc3545, #c82333);
+}
+
+.stop-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.action-fields {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.ticket-input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ticket-input-container label {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.ticket-input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #f9bbf5;
+  width: 120px;
+  text-align: center;
+}
+
+.ticket-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
